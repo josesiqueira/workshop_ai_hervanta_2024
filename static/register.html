@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Products - Bike Shop</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Register Products</h1>
+        <nav>
+            <ul>
+                <li><a href="/static/index.html">Home</a></li>
+                <li><a href="/static/products.html">See Products</a></li>
+                <li><a href="/static/cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="product-form">
+            <label for="title">Product Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Product Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+
+            <label for="image">Product Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <h2>Existing Products</h2>
+        <ul id="product-list"></ul>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
